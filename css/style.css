@@ -7,7 +7,13 @@
 }
 h1 {
   text-align: center;
-  margin: 50px 0;
+  margin: 50px 0;$(function() {
+  $('.menu-trigger').on('click', function(event) {
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    event.preventDefault();
+  });
+});
 }
 .box {
   height: 300px;
